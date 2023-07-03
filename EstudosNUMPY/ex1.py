@@ -1,5 +1,3 @@
-!pip install pandas 
-
 import pandas as pd
 class Feedback:
   def __init__(self,nota,comentario):
@@ -18,7 +16,7 @@ def calcular_nps(self):
    
 
 # Leitura do arquivo
-dados = pd.read_csv('/Users/leantavares/Documents/feedbacks.csv')
+dados = pd.read_csv('feedbacks.csv')
 notas = dados['nota']
 
 print(f"O NPS é: {nps}")
